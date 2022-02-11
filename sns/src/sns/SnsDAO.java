@@ -49,7 +49,7 @@ public class SnsDAO {
 		List<Sns> newsList = new ArrayList<>();
 		
 //		String sql = "select sid, title, PARSEDATETIME(date,'yyyy-MM-dd hh:mm:ss') as cdate from sns";
-		String sql = "select sid, title, date from sns";
+		String sql = "select * from sns";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		ResultSet rs = pstmt.executeQuery();
 		
@@ -59,6 +59,8 @@ public class SnsDAO {
 				n.setSid(rs.getInt("sid"));
 				n.setTitle(rs.getString("title"));
 				n.setDate(rs.getString("date")); 
+				n.setImg(rs.getString("img")); 
+				n.setContent(rs.getString("content")); 
 				
 				newsList.add(n);
 			}
