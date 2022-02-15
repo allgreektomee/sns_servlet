@@ -65,7 +65,7 @@ public class SnsApi {
 		return snsList;
 	}
 	
-	// 뉴스 상세 정보
+	//상세 정보
 	@GET
 	@Path("{sid}")
 	@Produces(MediaType.APPLICATION_JSON)
