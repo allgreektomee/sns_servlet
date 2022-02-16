@@ -27,7 +27,7 @@ public class SnsApi {
 	//등록
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
-	public String addNews(Sns sns) {
+	public String addSns(Sns sns) {
 		try {
 			dao.addPost(sns);
 		} catch (Exception e) {

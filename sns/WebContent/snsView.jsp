@@ -33,7 +33,7 @@
 				<input type="text" name="title" class="form-control" value ="${post.title}">
 				<label class="form-label">이미지</label>
 				<input type="file" name="file" class="form-control" >
-				<label class="form-label">기사내용</label>
+				<label class="form-label">내용</label>
 				<textarea cols="50" rows="5" name="content" class="form-control"> ${post.content}</textarea>
 				<button type="submit" class="btn btn-success mt-3">저장</button>
 			</form>
