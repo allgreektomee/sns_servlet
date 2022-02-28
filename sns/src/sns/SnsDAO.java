@@ -46,7 +46,7 @@ public class SnsDAO {
 
 	public List<Sns> getAllPost() throws Exception {
 		Connection conn = open();
-		List<Sns> newsList = new ArrayList<>();
+		List<Sns> snsList = new ArrayList<>();
 		
 //		String sql = "select sid, title, PARSEDATETIME(date,'yyyy-MM-dd hh:mm:ss') as cdate from sns";
 		String sql = "select * from sns";
@@ -62,9 +62,9 @@ public class SnsDAO {
 				n.setImg(rs.getString("img")); 
 				n.setContent(rs.getString("content")); 
 				
-				newsList.add(n);
+				snsList.add(n);
 			}
-			return newsList;			
+			return snsList;			
 		}
 	}
 	
