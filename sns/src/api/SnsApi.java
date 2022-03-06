@@ -45,9 +45,9 @@ public class SnsApi {
 			dao.delPost(sid);
 		} catch (SQLException e) {
 			e.printStackTrace();
-			return "News API: 뉴스 삭제 실패!! - "+ sid;
+			return "SNS API:  실패 - "+ sid;
 		}
-		return "News API: 뉴스 삭제됨!! - "+ sid;
+		return "SNS API: 삭제!! - "+ sid;
 	}
 	
 	//목록
